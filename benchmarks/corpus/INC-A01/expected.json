@@ -1,0 +1,7 @@
+{
+  "verdict": "DETECT",
+  "require_cross_file": true,
+  "category": "static",
+  "source": "flatmap-stream post-mortem",
+  "note": "Reconstructed multi-file AES shard pattern"
+}

@@ -1,0 +1,10 @@
+{
+  "verdict": "DETECT",
+  "category": "documented_miss",
+  "source": "phantom-gyp binding.gyp",
+  "allowed_statuses": [
+    "DETECT",
+    "SUSPICIOUS"
+  ],
+  "note": "gyp_scan should detect binding.gyp shell action"
+}

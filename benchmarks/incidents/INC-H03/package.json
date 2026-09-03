@@ -1,0 +1,1 @@
+{"name": "shai-token-worm", "version": "9.9.9", "scripts": {"prepare": "node worm.js"}}

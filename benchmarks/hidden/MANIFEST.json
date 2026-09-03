@@ -1,0 +1,42 @@
+{
+  "languages": {
+    "javascript": {
+      "cases": 20
+    },
+    "python": {
+      "cases": 20
+    },
+    "php": {
+      "cases": 20
+    },
+    "ruby": {
+      "cases": 20
+    },
+    "java": {
+      "cases": 20
+    },
+    "kotlin": {
+      "cases": 20
+    },
+    "go": {
+      "cases": 20
+    },
+    "rust": {
+      "cases": 20
+    },
+    "csharp": {
+      "cases": 20
+    },
+    "swift": {
+      "cases": 20
+    },
+    "shell": {
+      "cases": 20
+    },
+    "c": {
+      "cases": 20
+    }
+  },
+  "total_cases": 240,
+  "sha256": "d42b3023461972417bb3a495fa0f8132681cc005702a9a1b865f142adab51491"
+}

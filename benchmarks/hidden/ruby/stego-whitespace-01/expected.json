@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "technique": "stego-whitespace",
+  "lang": "ruby"
+}

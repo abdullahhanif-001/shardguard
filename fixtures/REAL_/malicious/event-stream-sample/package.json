@@ -1,0 +1,1 @@
+{"name": "event-stream-sample", "version": "0.0.0-malicious-sample", "scripts": {"prepare": "node install.js"}}

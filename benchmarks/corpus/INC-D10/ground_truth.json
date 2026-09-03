@@ -1,0 +1,8 @@
+{
+  "id": "INC-D10",
+  "tier": "D",
+  "path": "benchmarks/incidents/INC-D10",
+  "verdict": "CLEAN",
+  "category": "static",
+  "copied_from": "benchmarks/incidents/INC-D10"
+}

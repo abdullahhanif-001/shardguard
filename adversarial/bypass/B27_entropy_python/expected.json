@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "python",
+  "bypass_id": "B27_entropy_python"
+}

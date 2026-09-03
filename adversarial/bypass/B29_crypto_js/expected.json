@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "javascript",
+  "bypass_id": "B29_crypto_js"
+}

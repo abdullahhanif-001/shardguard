@@ -1,0 +1,40 @@
+# Multi-file fragmentation detection rules (scsp-custom layer)
+# Used by SARIF enricher and documentation; engine implements matching logic.
+
+fragmentation_patterns:
+  - id: string.shard.reassembly
+    description: String literals concatenated across modules then passed to eval/exec
+    severity: CRITICAL
+
+  - id: base64.shard.reassembly
+    description: Base64 shards reassembled across files into executable payload
+    severity: CRITICAL
+
+  - id: multi.file.fragmentation
+    description: Taint flows across 2+ modules with no single-file sink
+    severity: CRITICAL
+    require_cross_file: true
+
+  - id: lifecycle.chain
+    description: npm lifecycle script triggers multi-file malicious chain
+    severity: CRITICAL
+    require_lifecycle: true
+
+sources:
+  - process.env
+  - process.argv
+  - http.request
+  - fs.read
+  - globalThis
+  - dynamic.import
+  - time.trigger
+
+sinks:
+  - eval
+  - Function
+  - command.exec
+  - vm.exec
+  - fs.write
+  - network.out
+  - wasm.load
+  - prototype.pollution

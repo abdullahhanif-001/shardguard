@@ -1,0 +1,5 @@
+{
+  "verdict": "DOCUMENTED_SKIP",
+  "category": "documented_miss",
+  "note": "npm audit only CVE"
+}

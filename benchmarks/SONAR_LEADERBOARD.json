@@ -1,0 +1,619 @@
+{
+  "generated_at": "2026-09-02T12:06:34.844830+00:00",
+  "cases_total": 35,
+  "scsp_recall": 1.0,
+  "sonar_recall": 0.2,
+  "scsp_wins": 35,
+  "sonar_wins": 7,
+  "cases": [
+    {
+      "id": "INC-A01",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 3,
+        "latency_ms": 203
+      },
+      "sonar": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 0,
+        "rules": [
+          "S1523"
+        ],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A02",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 186
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A03",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 189
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A04",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 196
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A05",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 201
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A06",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 207
+      },
+      "sonar": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 0,
+        "rules": [
+          "S1523"
+        ],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A07",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 227
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A08",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 204
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A09",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 2,
+        "latency_ms": 207
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A10",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 209
+      },
+      "sonar": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 0,
+        "rules": [
+          "S1523"
+        ],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A11",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 212
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A12",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 204
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A13",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 233
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A14",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 2,
+        "latency_ms": 197
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A15",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 199
+      },
+      "sonar": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 0,
+        "rules": [
+          "S1523"
+        ],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A16",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 201
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A17",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 210
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A18",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 209
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A19",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 2,
+        "latency_ms": 213
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A20",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 196
+      },
+      "sonar": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 0,
+        "rules": [
+          "S1523"
+        ],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A21",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 3,
+        "latency_ms": 217
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A22",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 195
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A23",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 216
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A24",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 2,
+        "latency_ms": 202
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-A21",
+      "tier": "A",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 3,
+        "latency_ms": 220
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H01",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 2,
+        "latency_ms": 202
+      },
+      "sonar": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 0,
+        "rules": [
+          "S4721"
+        ],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H02",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 200
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H03",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 200
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H04",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 209
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H05",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 232
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H06",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 223
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H07",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 217
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H08",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 203
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H09",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 194
+      },
+      "sonar": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 0,
+        "rules": [
+          "S1523"
+        ],
+        "engine": "sonar-pattern-oracle"
+      }
+    },
+    {
+      "id": "INC-H10",
+      "tier": "H",
+      "expected": "DETECT",
+      "scsp": {
+        "verdict": "HIT",
+        "findings": 1,
+        "latency_ms": 211
+      },
+      "sonar": {
+        "verdict": "MISS",
+        "findings": 0,
+        "latency_ms": 0,
+        "rules": [],
+        "engine": "sonar-pattern-oracle"
+      }
+    }
+  ]
+}

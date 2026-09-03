@@ -1,0 +1,24 @@
+{
+  "languages": {
+    "php": {
+      "cases": 50
+    },
+    "ruby": {
+      "cases": 50
+    },
+    "csharp": {
+      "cases": 50
+    },
+    "kotlin": {
+      "cases": 50
+    },
+    "swift": {
+      "cases": 50
+    },
+    "shell": {
+      "cases": 50
+    }
+  },
+  "total_cases": 300,
+  "mixed_v2": "C:\\Users\\Administrator\\Downloads\\miltary\\benchmarks\\languages\\mixed_v2"
+}

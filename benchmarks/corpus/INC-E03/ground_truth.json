@@ -1,0 +1,9 @@
+{
+  "id": "INC-E03",
+  "tier": "E",
+  "path": "benchmarks/incidents/INC-E03",
+  "verdict": "DETECT",
+  "category": "dynamic_noise",
+  "noise_context": true,
+  "copied_from": "benchmarks/incidents/INC-E03"
+}

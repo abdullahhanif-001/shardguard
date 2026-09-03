@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "ruby",
+  "bypass_id": "B19_encoding_ruby"
+}

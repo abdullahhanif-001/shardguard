@@ -1,0 +1,11 @@
+{
+  "verdict": "DETECT",
+  "require_cross_file": true,
+  "category": "static",
+  "source": "transitive dep path",
+  "allowed_statuses": [
+    "DETECT",
+    "SUSPICIOUS",
+    "UNKNOWN_RISK"
+  ]
+}

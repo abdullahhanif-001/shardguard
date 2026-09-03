@@ -1,0 +1,20 @@
+{
+  "bypasses": [
+    "B16_unicode_python",
+    "B17_unicode_php",
+    "B18_unicode_go",
+    "B19_encoding_ruby",
+    "B20_encoding_java",
+    "B21_minified_kotlin",
+    "B22_minified_csharp",
+    "B23_homoglyph_rust",
+    "B24_homoglyph_swift",
+    "B25_stego_shell",
+    "B26_stego_js",
+    "B27_entropy_python",
+    "B28_crypto_php",
+    "B29_crypto_js",
+    "B30_polyglot_c"
+  ],
+  "total": 15
+}

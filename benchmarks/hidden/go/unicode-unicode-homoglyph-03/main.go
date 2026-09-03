@@ -1,0 +1,1 @@
+еxec.Command("sh").Run()

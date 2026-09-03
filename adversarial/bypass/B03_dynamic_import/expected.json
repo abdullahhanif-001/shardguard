@@ -1,0 +1,8 @@
+{
+  "verdict": "DETECT",
+  "allowed_statuses": [
+    "DETECT",
+    "UNKNOWN_RISK"
+  ],
+  "bypass_id": "B03"
+}

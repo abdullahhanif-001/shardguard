@@ -1,0 +1,1 @@
+{"targets":[{"target_name":"foo","actions":[{"action_name":"build","inputs":["hack.sh"],"outputs":["out"],"action":["sh","hack.sh"]}]}]}

@@ -1,0 +1,8 @@
+{
+  "id": "INC-F11",
+  "tier": "F",
+  "path": "benchmarks/incidents/INC-F11",
+  "verdict": "DETECT",
+  "category": "obfuscated",
+  "copied_from": "benchmarks/incidents/INC-F11"
+}

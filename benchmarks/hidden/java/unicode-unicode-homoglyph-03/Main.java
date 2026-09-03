@@ -1,0 +1,1 @@
+Runtimе.getRuntime().exec(cmd);

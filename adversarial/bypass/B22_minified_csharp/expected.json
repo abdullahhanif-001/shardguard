@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "csharp",
+  "bypass_id": "B22_minified_csharp"
+}

@@ -1,0 +1,8 @@
+{
+  "verdict": "DETECT",
+  "allowed_statuses": [
+    "DETECT",
+    "SCC_INCOMPLETE"
+  ],
+  "bypass_id": "B09"
+}

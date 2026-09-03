@@ -1,0 +1,1 @@
+{"name": "pnpm_lock_noise", "version": "1.0.0", "workspaces": ["packages/*"]}

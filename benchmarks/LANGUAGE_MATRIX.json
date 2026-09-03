@@ -1,0 +1,26 @@
+{
+  "sonar_target_count": 40,
+  "scsp_minimum_for_g33": 12,
+  "tiers": {
+    "tier0_core": ["javascript", "python", "go", "rust", "java", "c"],
+    "tier1": ["php", "ruby", "csharp", "kotlin", "swift", "shell"],
+    "tier2": ["scala", "dart", "objective_c", "powershell", "groovy"],
+    "tier3": ["abap", "cobol", "rpg", "plsql", "vb6", "flex", "gosu"],
+    "tier_config": ["terraform", "ansible", "cloudformation", "kubernetes", "docker", "yaml", "json", "xml"]
+  },
+  "per_language_gates": {
+    "javascript": {"min_sources": 10, "min_sinks": 11, "cross_file": true, "extensions": [".js", ".mjs", ".cjs", ".ts", ".tsx"]},
+    "python": {"min_sources": 5, "min_sinks": 6, "cross_file": true, "extensions": [".py"], "target_phase": 2},
+    "go": {"min_sources": 4, "min_sinks": 4, "cross_file": true, "extensions": [".go"], "target_phase": 2},
+    "java": {"min_sources": 3, "min_sinks": 4, "cross_file": true, "extensions": [".java"], "target_phase": 2},
+    "rust": {"min_sources": 3, "min_sinks": 3, "cross_file": false, "extensions": [".rs"]},
+    "c": {"min_sources": 4, "min_sinks": 3, "cross_file": false, "extensions": [".c", ".cpp", ".cc", ".h", ".hpp"]},
+    "php": {"min_sources": 4, "min_sinks": 5, "cross_file": false, "extensions": [".php"]},
+    "ruby": {"min_sources": 3, "min_sinks": 4, "cross_file": false, "extensions": [".rb"]},
+    "csharp": {"min_sources": 3, "min_sinks": 4, "cross_file": false, "extensions": [".cs"]},
+    "kotlin": {"min_sources": 3, "min_sinks": 3, "cross_file": false, "extensions": [".kt", ".kts"]},
+    "swift": {"min_sources": 3, "min_sinks": 3, "cross_file": false, "extensions": [".swift"]},
+    "shell": {"min_sources": 2, "min_sinks": 3, "cross_file": false, "extensions": [".sh", ".bash"]}
+  },
+  "recall_gate": {"min_recall": 0.90, "max_fpr": 0.02, "cases_per_lang": 50}
+}

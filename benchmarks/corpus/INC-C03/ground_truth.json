@@ -1,0 +1,8 @@
+{
+  "id": "INC-C03",
+  "tier": "C",
+  "path": "benchmarks/incidents/INC-C03",
+  "verdict": "DOCUMENTED_SKIP",
+  "category": "documented_miss",
+  "copied_from": "benchmarks/incidents/INC-C03"
+}

@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "technique": "minified",
+  "lang": "ruby"
+}

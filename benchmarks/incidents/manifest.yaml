@@ -1,0 +1,313 @@
+version: 3
+frozen_at: "2026-09-02T02:51:44.875346+00:00"
+description: "Google Elite G5-G7 incident corpus — ground truth frozen before scan"
+case_count: 77
+cases:
+  - id: INC-A01
+    tier: A
+    path: benchmarks/incidents/INC-A01
+    verdict: DETECT
+  - id: INC-A02
+    tier: A
+    path: benchmarks/incidents/INC-A02
+    verdict: DETECT
+  - id: INC-A03
+    tier: A
+    path: benchmarks/incidents/INC-A03
+    verdict: DETECT
+  - id: INC-A04
+    tier: A
+    path: benchmarks/incidents/INC-A04
+    verdict: DETECT
+  - id: INC-A05
+    tier: A
+    path: benchmarks/incidents/INC-A05
+    verdict: DETECT
+  - id: INC-A06
+    tier: A
+    path: benchmarks/incidents/INC-A06
+    verdict: DETECT
+  - id: INC-A07
+    tier: A
+    path: benchmarks/incidents/INC-A07
+    verdict: DETECT
+  - id: INC-A08
+    tier: A
+    path: benchmarks/incidents/INC-A08
+    verdict: DETECT
+  - id: INC-A09
+    tier: A
+    path: benchmarks/incidents/INC-A09
+    verdict: DETECT
+  - id: INC-A10
+    tier: A
+    path: benchmarks/incidents/INC-A10
+    verdict: DETECT
+  - id: INC-A11
+    tier: A
+    path: benchmarks/incidents/INC-A11
+    verdict: DETECT
+  - id: INC-A12
+    tier: A
+    path: benchmarks/incidents/INC-A12
+    verdict: DETECT
+  - id: INC-A13
+    tier: A
+    path: benchmarks/incidents/INC-A13
+    verdict: DETECT
+  - id: INC-A14
+    tier: A
+    path: benchmarks/incidents/INC-A14
+    verdict: DETECT
+  - id: INC-A15
+    tier: A
+    path: benchmarks/incidents/INC-A15
+    verdict: DETECT
+  - id: INC-A16
+    tier: A
+    path: benchmarks/incidents/INC-A16
+    verdict: DETECT
+  - id: INC-A17
+    tier: A
+    path: benchmarks/incidents/INC-A17
+    verdict: DETECT
+  - id: INC-A18
+    tier: A
+    path: benchmarks/incidents/INC-A18
+    verdict: DETECT
+  - id: INC-A19
+    tier: A
+    path: benchmarks/incidents/INC-A19
+    verdict: DETECT
+  - id: INC-A20
+    tier: A
+    path: benchmarks/incidents/INC-A20
+    verdict: DETECT
+  - id: INC-A21
+    tier: A
+    path: benchmarks/incidents/INC-A21
+    verdict: DETECT
+  - id: INC-A22
+    tier: A
+    path: benchmarks/incidents/INC-A22
+    verdict: DETECT
+  - id: INC-A23
+    tier: A
+    path: benchmarks/incidents/INC-A23
+    verdict: DETECT
+  - id: INC-A24
+    tier: A
+    path: benchmarks/incidents/INC-A24
+    verdict: DETECT
+  - id: INC-A21
+    tier: A
+    path: benchmarks/incidents/INC-A21
+    verdict: DETECT
+  - id: INC-B01
+    tier: B
+    path: benchmarks/incidents/INC-B01
+    verdict: DETECT
+  - id: INC-B02
+    tier: B
+    path: benchmarks/incidents/INC-B02
+    verdict: DETECT
+  - id: INC-B03
+    tier: B
+    path: benchmarks/incidents/INC-B03
+    verdict: DETECT
+  - id: INC-B04
+    tier: B
+    path: benchmarks/incidents/INC-B04
+    verdict: DETECT
+  - id: INC-B05
+    tier: B
+    path: benchmarks/incidents/INC-B05
+    verdict: DETECT
+  - id: INC-B06
+    tier: B
+    path: benchmarks/incidents/INC-B06
+    verdict: DETECT
+  - id: INC-B07
+    tier: B
+    path: benchmarks/incidents/INC-B07
+    verdict: DETECT
+  - id: INC-B08
+    tier: B
+    path: benchmarks/incidents/INC-B08
+    verdict: DETECT
+  - id: INC-B09
+    tier: B
+    path: benchmarks/incidents/INC-B09
+    verdict: DETECT
+  - id: INC-B10
+    tier: B
+    path: benchmarks/incidents/INC-B10
+    verdict: DETECT
+  - id: INC-C01
+    tier: C
+    path: benchmarks/incidents/INC-C01
+    verdict: DOCUMENTED_MISS
+  - id: INC-C02
+    tier: C
+    path: benchmarks/incidents/INC-C02
+    verdict: DOCUMENTED_MISS
+  - id: INC-C03
+    tier: C
+    path: benchmarks/incidents/INC-C03
+    verdict: DOCUMENTED_SKIP
+  - id: INC-C04
+    tier: C
+    path: benchmarks/incidents/INC-C04
+    verdict: DOCUMENTED_MISS
+  - id: INC-C05
+    tier: C
+    path: benchmarks/incidents/INC-C05
+    verdict: DOCUMENTED_SKIP
+  - id: INC-D01
+    tier: D
+    path: benchmarks/incidents/INC-D01
+    verdict: CLEAN
+  - id: INC-D02
+    tier: D
+    path: benchmarks/incidents/INC-D02
+    verdict: CLEAN
+  - id: INC-D03
+    tier: D
+    path: benchmarks/incidents/INC-D03
+    verdict: CLEAN
+  - id: INC-D04
+    tier: D
+    path: benchmarks/incidents/INC-D04
+    verdict: CLEAN
+  - id: INC-D05
+    tier: D
+    path: benchmarks/incidents/INC-D05
+    verdict: CLEAN
+  - id: INC-D06
+    tier: D
+    path: benchmarks/incidents/INC-D06
+    verdict: CLEAN
+  - id: INC-D07
+    tier: D
+    path: benchmarks/incidents/INC-D07
+    verdict: CLEAN
+  - id: INC-D08
+    tier: D
+    path: benchmarks/incidents/INC-D08
+    verdict: CLEAN
+  - id: INC-D09
+    tier: D
+    path: benchmarks/incidents/INC-D09
+    verdict: CLEAN
+  - id: INC-D10
+    tier: D
+    path: benchmarks/incidents/INC-D10
+    verdict: CLEAN
+  - id: INC-E01
+    tier: E
+    path: benchmarks/incidents/INC-E01
+    verdict: DETECT
+  - id: INC-E02
+    tier: E
+    path: benchmarks/incidents/INC-E02
+    verdict: CLEAN
+  - id: INC-E03
+    tier: E
+    path: benchmarks/incidents/INC-E03
+    verdict: DETECT
+  - id: INC-E04
+    tier: E
+    path: benchmarks/incidents/INC-E04
+    verdict: CLEAN
+  - id: INC-E05
+    tier: E
+    path: benchmarks/incidents/INC-E05
+    verdict: CLEAN
+  - id: INC-E06
+    tier: E
+    path: benchmarks/incidents/INC-E06
+    verdict: DETECT
+  - id: INC-E07
+    tier: E
+    path: benchmarks/incidents/INC-E07
+    verdict: DETECT
+  - id: INC-E08
+    tier: E
+    path: benchmarks/incidents/INC-E08
+    verdict: DETECT
+  - id: INC-E09
+    tier: E
+    path: benchmarks/incidents/INC-E09
+    verdict: DETECT
+  - id: INC-E10
+    tier: E
+    path: benchmarks/incidents/INC-E10
+    verdict: CLEAN
+  - id: INC-E11
+    tier: E
+    path: benchmarks/incidents/INC-E11
+    verdict: CLEAN
+  - id: INC-E12
+    tier: E
+    path: benchmarks/incidents/INC-E12
+    verdict: CLEAN
+  - id: INC-E13
+    tier: E
+    path: benchmarks/incidents/INC-E13
+    verdict: DETECT
+  - id: INC-E14
+    tier: E
+    path: benchmarks/incidents/INC-E14
+    verdict: CLEAN
+  - id: INC-E15
+    tier: E
+    path: benchmarks/incidents/INC-E15
+    verdict: DETECT
+  - id: INC-F01
+    tier: F
+    path: benchmarks/incidents/INC-F01
+    verdict: DETECT
+  - id: INC-F02
+    tier: F
+    path: benchmarks/incidents/INC-F02
+    verdict: DETECT
+  - id: INC-F03
+    tier: F
+    path: benchmarks/incidents/INC-F03
+    verdict: DETECT
+  - id: INC-F04
+    tier: F
+    path: benchmarks/incidents/INC-F04
+    verdict: DETECT
+  - id: INC-F05
+    tier: F
+    path: benchmarks/incidents/INC-F05
+    verdict: DETECT
+  - id: INC-F06
+    tier: F
+    path: benchmarks/incidents/INC-F06
+    verdict: DETECT
+  - id: INC-F07
+    tier: F
+    path: benchmarks/incidents/INC-F07
+    verdict: DETECT
+  - id: INC-F08
+    tier: F
+    path: benchmarks/incidents/INC-F08
+    verdict: DETECT
+  - id: INC-F09
+    tier: F
+    path: benchmarks/incidents/INC-F09
+    verdict: CLEAN
+  - id: INC-F10
+    tier: F
+    path: benchmarks/incidents/INC-F10
+    verdict: CLEAN
+  - id: INC-F11
+    tier: F
+    path: benchmarks/incidents/INC-F11
+    verdict: DETECT
+  - id: INC-F12
+    tier: F
+    path: benchmarks/incidents/INC-F12
+    verdict: DETECT

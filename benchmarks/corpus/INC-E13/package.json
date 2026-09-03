@@ -1,0 +1,1 @@
+{"name": "shard_in_noise", "version": "1.0.0", "scripts": {"postinstall": "node src/run.js"}}

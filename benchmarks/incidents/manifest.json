@@ -1,0 +1,1417 @@
+{
+  "version": 3,
+  "frozen_at": "2026-09-02T02:51:44.875346+00:00",
+  "description": "Google Elite G5-G7 incident corpus \u2014 ground truth frozen before scan",
+  "tiers": {
+    "A": {
+      "min_cases": 20,
+      "recall_min": 0.95,
+      "require_cross_file": true
+    },
+    "B": {
+      "min_cases": 10,
+      "suspicious_or_detect_min": 0.8
+    },
+    "C": {
+      "min_cases": 5,
+      "silent_clean_forbidden": true
+    },
+    "D": {
+      "min_cases": 10,
+      "fpr_max": 0.02
+    },
+    "E": {
+      "min_cases": 15,
+      "noise_fp_max": 0.05,
+      "shard_recall_min": 0.9
+    },
+    "F": {
+      "min_cases": 12,
+      "recall_min": 0.85,
+      "unicode_fp_max": 0.03
+    },
+    "G": {
+      "fpr_max": 0.02,
+      "f3_min": 0.9,
+      "precision_at_20_min": 0.8
+    }
+  },
+  "cases": [
+    {
+      "id": "INC-A01",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A01",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A02",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A02",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A03",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A03",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M01_shard_three_modules",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A04",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A04",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "require_lifecycle": true,
+      "category": "static",
+      "source": "MOCK M02_postinstall_chain",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A05",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A05",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M03_async_setimmediate",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A06",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A06",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M05_string_concat_eval",
+      "split": "holdout"
+    },
+    {
+      "id": "INC-A07",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A07",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M06_variant_00",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A08",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A08",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M07_variant_01",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A09",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A09",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M08_variant_02",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A10",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A10",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M09_variant_03",
+      "split": "holdout"
+    },
+    {
+      "id": "INC-A11",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A11",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M10_variant_04",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A12",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A12",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M11_variant_05",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A13",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A13",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M12_variant_06",
+      "split": "holdout"
+    },
+    {
+      "id": "INC-A14",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A14",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M13_variant_07",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A15",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A15",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M14_variant_08",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A16",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A16",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M15_variant_09",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A17",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A17",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M16_variant_10",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A18",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A18",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M17_variant_11",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A19",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A19",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M18_variant_12",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A20",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A20",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M19_variant_13",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A21",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A21",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M20_variant_14",
+      "split": "holdout"
+    },
+    {
+      "id": "INC-A22",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A22",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M21_variant_15",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A23",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A23",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M22_variant_16",
+      "split": "holdout"
+    },
+    {
+      "id": "INC-A24",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A24",
+      "verdict": "DETECT",
+      "require_cross_file": true,
+      "category": "static",
+      "source": "MOCK M23_variant_17",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-A21",
+      "tier": "A",
+      "path": "benchmarks/incidents/INC-A21",
+      "verdict": "DETECT",
+      "category": "static",
+      "split": "holdout"
+    },
+    {
+      "id": "INC-B01",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B01",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B02",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B02",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B03",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B03",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B04",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B04",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B05",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B05",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B06",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B06",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B07",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B07",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B08",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B08",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B09",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B09",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-B10",
+      "tier": "B",
+      "path": "benchmarks/incidents/INC-B10",
+      "verdict": "DETECT",
+      "allowed_statuses": [
+        "DETECT",
+        "SUSPICIOUS",
+        "UNKNOWN_RISK"
+      ],
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-C01",
+      "tier": "C",
+      "path": "benchmarks/incidents/INC-C01",
+      "verdict": "DOCUMENTED_MISS",
+      "category": "documented_miss",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-C02",
+      "tier": "C",
+      "path": "benchmarks/incidents/INC-C02",
+      "verdict": "DOCUMENTED_MISS",
+      "category": "documented_miss",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-C03",
+      "tier": "C",
+      "path": "benchmarks/incidents/INC-C03",
+      "verdict": "DOCUMENTED_SKIP",
+      "category": "documented_miss",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-C04",
+      "tier": "C",
+      "path": "benchmarks/incidents/INC-C04",
+      "verdict": "DOCUMENTED_MISS",
+      "category": "documented_miss",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-C05",
+      "tier": "C",
+      "path": "benchmarks/incidents/INC-C05",
+      "verdict": "DOCUMENTED_SKIP",
+      "category": "documented_miss",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D01",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D01",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D02",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D02",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D03",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D03",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D04",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D04",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D05",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D05",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D06",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D06",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D07",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D07",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D08",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D08",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D09",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D09",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-D10",
+      "tier": "D",
+      "path": "benchmarks/incidents/INC-D10",
+      "verdict": "CLEAN",
+      "category": "static",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E01",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E01",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E02",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E02",
+      "verdict": "CLEAN",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E03",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E03",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E04",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E04",
+      "verdict": "CLEAN",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E05",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E05",
+      "verdict": "CLEAN",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E06",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E06",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E07",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E07",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E08",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E08",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E09",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E09",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E10",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E10",
+      "verdict": "CLEAN",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E11",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E11",
+      "verdict": "CLEAN",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E12",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E12",
+      "verdict": "CLEAN",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E13",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E13",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E14",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E14",
+      "verdict": "CLEAN",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-E15",
+      "tier": "E",
+      "path": "benchmarks/incidents/INC-E15",
+      "verdict": "DETECT",
+      "category": "dynamic_noise",
+      "noise_context": true,
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F01",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F01",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F02",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F02",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F03",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F03",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F04",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F04",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F05",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F05",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F06",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F06",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F07",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F07",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F08",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F08",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F09",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F09",
+      "verdict": "CLEAN",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F10",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F10",
+      "verdict": "CLEAN",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F11",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F11",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-F12",
+      "tier": "F",
+      "path": "benchmarks/incidents/INC-F12",
+      "verdict": "DETECT",
+      "category": "obfuscated",
+      "split": "calibration"
+    },
+    {
+      "id": "INC-H01",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H01",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H02",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H02",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H03",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H03",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H04",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H04",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H05",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H05",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H06",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H06",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H07",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H07",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H08",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H08",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H09",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H09",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-H10",
+      "tier": "H",
+      "path": "benchmarks/incidents/INC-H10",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M001",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M001",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M002",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M002",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M003",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M003",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M004",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M004",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M005",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M005",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M006",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M006",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M007",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M007",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M008",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M008",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M009",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M009",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M010",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M010",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M011",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M011",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M012",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M012",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M013",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M013",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M014",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M014",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M015",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M015",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M016",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M016",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M017",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M017",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M018",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M018",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M019",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M019",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M020",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M020",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M021",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M021",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M022",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M022",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M023",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M023",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M024",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M024",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M025",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M025",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M026",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M026",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M027",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M027",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M028",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M028",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M029",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M029",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M030",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M030",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M031",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M031",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M032",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M032",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M033",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M033",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M034",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M034",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M035",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M035",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M036",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M036",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M037",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M037",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M038",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M038",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M039",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M039",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M040",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M040",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M041",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M041",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M042",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M042",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M043",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M043",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M044",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M044",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M045",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M045",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M046",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M046",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M047",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M047",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M048",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M048",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-M049",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-M049",
+      "verdict": "DETECT"
+    },
+    {
+      "id": "INC-I-B001",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B001",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B002",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B002",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B003",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B003",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B004",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B004",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B005",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B005",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B006",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B006",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B007",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B007",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B008",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B008",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B009",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B009",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B010",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B010",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B011",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B011",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B012",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B012",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B013",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B013",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B014",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B014",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B015",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B015",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B016",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B016",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B017",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B017",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B018",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B018",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B019",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B019",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B020",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B020",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B021",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B021",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B022",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B022",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B023",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B023",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B024",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B024",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B025",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B025",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B026",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B026",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B027",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B027",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B028",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B028",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B029",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B029",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B030",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B030",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B031",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B031",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B032",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B032",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B033",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B033",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B034",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B034",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B035",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B035",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B036",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B036",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B037",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B037",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B038",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B038",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B039",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B039",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B040",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B040",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B041",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B041",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B042",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B042",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B043",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B043",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B044",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B044",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B045",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B045",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B046",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B046",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B047",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B047",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B048",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B048",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B049",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B049",
+      "verdict": "CLEAN"
+    },
+    {
+      "id": "INC-I-B050",
+      "tier": "I",
+      "path": "benchmarks/tier_i/INC-I-B050",
+      "verdict": "CLEAN"
+    }
+  ],
+  "tier_counts": {
+    "H": 10,
+    "I": 99
+  }
+}

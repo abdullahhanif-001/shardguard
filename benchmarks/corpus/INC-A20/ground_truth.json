@@ -1,0 +1,10 @@
+{
+  "id": "INC-A20",
+  "tier": "A",
+  "path": "benchmarks/incidents/INC-A20",
+  "verdict": "DETECT",
+  "require_cross_file": true,
+  "category": "static",
+  "source": "MOCK M19_variant_13",
+  "copied_from": "benchmarks/incidents/INC-A20"
+}

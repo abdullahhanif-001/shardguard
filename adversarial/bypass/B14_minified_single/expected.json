@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "allowed_statuses": ["DETECT", "SUSPICIOUS"],
+  "bypass_id": "B14"
+}

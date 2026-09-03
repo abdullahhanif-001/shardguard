@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "java",
+  "bypass_id": "B20_encoding_java"
+}

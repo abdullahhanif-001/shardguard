@@ -1,0 +1,1067 @@
+{
+  "generated_at": "2026-09-02T02:55:05.913161+00:00",
+  "corpus_sha256": "5a6ed28ebd15254ba451915d7f883a5d7b5929ad766216f0553d74736dd57ac6",
+  "tiers": [
+    "A",
+    "H"
+  ],
+  "cases_total": 35,
+  "scsp_recall": 0.9714,
+  "mcnemar_vs_semgrep": {
+    "scsp_only_wins": 34,
+    "semgrep_only_wins": 0,
+    "p_value": 0.0
+  },
+  "cases": [
+    {
+      "id": "INC-A01",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 3,
+          "latency_ms": 206,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A02",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 209,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A03",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 235,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A04",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 228,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A05",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 220,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A06",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 230,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A07",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 218,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A08",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 218,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A09",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 2,
+          "latency_ms": 218,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A10",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 197,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A11",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 213,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A12",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 207,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A13",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 253,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A14",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 2,
+          "latency_ms": 241,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A15",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 242,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A16",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 213,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A17",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 218,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A18",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 252,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A19",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 2,
+          "latency_ms": 662,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A20",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 228,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A21",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 3,
+          "latency_ms": 250,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A22",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 255,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A23",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 224,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A24",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 2,
+          "latency_ms": 212,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-A21",
+      "tier": "A",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 3,
+          "latency_ms": 241,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H01",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 2,
+          "latency_ms": 202,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H02",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 235,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H03",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 233,
+          "cross_file": false
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H04",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 231,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H05",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 212,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H06",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 219,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H07",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 223,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "npm failed"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H08",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 242,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    },
+    {
+      "id": "INC-H09",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "MISS",
+          "findings": 0,
+          "latency_ms": 248,
+          "cross_file": false
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": false
+    },
+    {
+      "id": "INC-H10",
+      "tier": "H",
+      "expected": "DETECT",
+      "tools": {
+        "scsp": {
+          "verdict": "HIT",
+          "findings": 1,
+          "latency_ms": 221,
+          "cross_file": true
+        },
+        "semgrep": {
+          "verdict": "SKIP",
+          "note": "semgrep not installed"
+        },
+        "npm_audit": {
+          "verdict": "SKIP",
+          "note": "no package.json"
+        },
+        "trivy": {
+          "verdict": "SKIP",
+          "note": "trivy not installed"
+        },
+        "muaddib": {
+          "verdict": "SKIP",
+          "note": "muaddib not installed"
+        }
+      },
+      "scsp_correct": true
+    }
+  ]
+}

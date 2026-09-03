@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "rust",
+  "bypass_id": "B23_homoglyph_rust"
+}

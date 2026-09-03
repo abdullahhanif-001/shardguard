@@ -1,0 +1,10 @@
+{
+  "verdict": "DETECT",
+  "allowed_statuses": [
+    "DETECT",
+    "SUSPICIOUS",
+    "UNKNOWN_RISK"
+  ],
+  "category": "obfuscated",
+  "source": "OSV MAL-2026-13356 pattern"
+}

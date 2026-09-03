@@ -1,0 +1,9 @@
+{
+  "id": "INC-A01",
+  "tier": "A",
+  "path": "benchmarks/incidents/INC-A01",
+  "verdict": "DETECT",
+  "require_cross_file": true,
+  "category": "static",
+  "copied_from": "benchmarks/incidents/INC-A01"
+}

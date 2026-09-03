@@ -1,0 +1,28 @@
+# npm lifecycle entry sources (ported from Aegis patterns)
+
+lifecycle_scripts:
+  - preinstall
+  - install
+  - postinstall
+  - prepare
+  - prepublish
+  - prepack
+
+entry_behavior:
+  treat_as_source: true
+  propagate_to_requires: true
+
+high_risk_combinations:
+  - script: postinstall
+    sink: child_process.exec
+    severity: CRITICAL
+  - script: preinstall
+    sink: eval
+    severity: CRITICAL
+  - script: prepare
+    sink: fs.writeFile
+    severity: HIGH
+
+provenance_checks:
+  compare_tarball_to_github: false  # phase 2
+  flag_missing_repository: true

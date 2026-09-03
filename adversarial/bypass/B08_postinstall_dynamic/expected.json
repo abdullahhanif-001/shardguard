@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "bypass_id": "B08",
+  "require_lifecycle": true
+}

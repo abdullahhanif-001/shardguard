@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "kotlin",
+  "bypass_id": "B21_minified_kotlin"
+}

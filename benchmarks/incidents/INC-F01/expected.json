@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "category": "obfuscated",
+  "unicode_pattern": "rtl_override"
+}

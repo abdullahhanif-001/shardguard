@@ -1,0 +1,6 @@
+{
+  "name": "m02",
+  "scripts": {
+    "postinstall": "node bootstrap.js"
+  }
+}

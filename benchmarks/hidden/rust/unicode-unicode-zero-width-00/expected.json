@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "technique": "unicode-zero-width",
+  "lang": "rust"
+}

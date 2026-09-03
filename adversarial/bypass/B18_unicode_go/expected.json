@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "go",
+  "bypass_id": "B18_unicode_go"
+}

@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "technique": "entropy-blob",
+  "lang": "csharp"
+}

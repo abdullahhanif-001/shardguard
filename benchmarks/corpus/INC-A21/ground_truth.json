@@ -1,0 +1,8 @@
+{
+  "id": "INC-A21",
+  "tier": "A",
+  "path": "benchmarks/incidents/INC-A21",
+  "verdict": "DETECT",
+  "category": "static",
+  "copied_from": "benchmarks/incidents/INC-A21"
+}

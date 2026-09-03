@@ -1,0 +1,6 @@
+{
+  "verdict": "DETECT",
+  "require_cross_file": true,
+  "category": "static",
+  "source": "MOCK M21_variant_15"
+}

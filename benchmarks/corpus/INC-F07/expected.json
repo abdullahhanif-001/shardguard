@@ -1,0 +1,9 @@
+{
+  "verdict": "DETECT",
+  "allowed_statuses": [
+    "DETECT",
+    "SUSPICIOUS"
+  ],
+  "category": "obfuscated",
+  "unicode_pattern": "combining"
+}

@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "c",
+  "bypass_id": "B30_polyglot_c"
+}

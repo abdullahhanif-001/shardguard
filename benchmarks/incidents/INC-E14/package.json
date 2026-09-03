@@ -1,0 +1,1 @@
+{"name": "mock_fp_trap", "version": "1.0.0", "workspaces": ["packages/*"]}

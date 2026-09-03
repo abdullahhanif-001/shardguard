@@ -1,0 +1,1 @@
+require('./packages/payload-pkg');

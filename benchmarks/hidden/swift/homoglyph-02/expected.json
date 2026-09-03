@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "technique": "homoglyph",
+  "lang": "swift"
+}

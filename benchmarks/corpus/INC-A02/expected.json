@@ -1,0 +1,7 @@
+{
+  "verdict": "DETECT",
+  "require_cross_file": true,
+  "require_lifecycle": true,
+  "category": "static",
+  "source": "dependency confusion postinstall"
+}

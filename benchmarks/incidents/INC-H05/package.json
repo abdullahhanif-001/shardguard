@@ -1,0 +1,1 @@
+{"name": "@corp/internal-lib", "scripts": {"postinstall": "node install.js"}}

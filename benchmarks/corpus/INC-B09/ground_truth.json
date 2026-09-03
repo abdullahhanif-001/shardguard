@@ -1,0 +1,13 @@
+{
+  "id": "INC-B09",
+  "tier": "B",
+  "path": "benchmarks/incidents/INC-B09",
+  "verdict": "DETECT",
+  "allowed_statuses": [
+    "DETECT",
+    "SUSPICIOUS",
+    "UNKNOWN_RISK"
+  ],
+  "category": "obfuscated",
+  "copied_from": "benchmarks/incidents/INC-B09"
+}

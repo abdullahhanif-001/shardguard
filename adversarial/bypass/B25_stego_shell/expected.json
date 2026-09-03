@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "shell",
+  "bypass_id": "B25_stego_shell"
+}

@@ -1,0 +1,7 @@
+{
+  "verdict": "DETECT",
+  "require_cross_file": true,
+  "require_lifecycle": true,
+  "category": "static",
+  "source": "MOCK M02_postinstall_chain"
+}

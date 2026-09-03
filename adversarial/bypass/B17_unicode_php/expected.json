@@ -1,0 +1,5 @@
+{
+  "verdict": "DETECT",
+  "lang": "php",
+  "bypass_id": "B17_unicode_php"
+}
