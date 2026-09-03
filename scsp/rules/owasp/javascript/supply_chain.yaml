@@ -1,0 +1,20 @@
+# OWASP rules — JavaScript (supply chain focus)
+rules:
+  - id: js-eval
+    pattern: eval\s*\(
+    message: JS eval
+    severity: CRITICAL
+    owasp: A03:2021
+    cwe: CWE-94
+  - id: js-child-process
+    pattern: child_process\.(exec|spawn)
+    message: Command execution
+    severity: CRITICAL
+    owasp: A03:2021
+    cwe: CWE-78
+  - id: js-lifecycle
+    pattern: postinstall|preinstall
+    message: npm lifecycle hook
+    severity: HIGH
+    owasp: A08:2021
+    cwe: CWE-829

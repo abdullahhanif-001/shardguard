@@ -1,0 +1,14 @@
+# OWASP A03 Injection — PHP
+rules:
+  - id: php-eval-injection
+    pattern: eval\s*\(
+    message: PHP eval injection
+    severity: CRITICAL
+    owasp: A03:2021
+    cwe: CWE-94
+  - id: php-include-taint
+    pattern: include\s*\(\s*\$
+    message: Dynamic include
+    severity: HIGH
+    owasp: A03:2021
+    cwe: CWE-98

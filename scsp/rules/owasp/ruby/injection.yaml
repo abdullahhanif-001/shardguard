@@ -1,0 +1,9 @@
+rules:
+  - id: ruby-system
+    pattern: system\s*\(
+    owasp: A03:2021
+    cwe: CWE-78
+  - id: ruby-marshal
+    pattern: Marshal\.load
+    owasp: A08:2021
+    cwe: CWE-502

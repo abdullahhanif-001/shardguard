@@ -1,0 +1,15 @@
+FROM python:3.12-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends git \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /scsp
+COPY . /scsp
+
+RUN pip install --no-cache-dir -e . \
+    && python scripts/benchmark/generate_incident_fixtures.py \
+    && python scripts/benchmark/fetch_osv_snapshots.py --tier all --offline \
+    && python -m scsp verify-self --pin
+
+# Air-gapped validation: docker run --network none scsp-proof
+CMD ["bash", "scripts/benchmark/run_elite_proof.sh"]

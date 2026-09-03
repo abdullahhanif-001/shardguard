@@ -1,0 +1,32 @@
+# OWASP Top 10 2021 category coverage manifest
+categories:
+  - id: A01:2021
+    name: Broken Access Control
+    rules: [urns/supply-chain]
+  - id: A02:2021
+    name: Cryptographic Failures
+    rules: [urns/crypto-weak]
+  - id: A03:2021
+    name: Injection
+    rules: [urns/fast-eval]
+  - id: A04:2021
+    name: Insecure Design
+    rules: [urns/hidden-unicode]
+  - id: A05:2021
+    name: Security Misconfiguration
+    rules: [urns/iac]
+  - id: A06:2021
+    name: Vulnerable Components
+    rules: [urns/supply-chain]
+  - id: A07:2021
+    name: Authentication Failures
+    rules: [urns/secrets]
+  - id: A08:2021
+    name: Integrity Failures
+    rules: [urns/git-forensics]
+  - id: A09:2021
+    name: Logging Failures
+    rules: [urns/campaign]
+  - id: A10:2021
+    name: SSRF
+    rules: [urns/fast-fetch]

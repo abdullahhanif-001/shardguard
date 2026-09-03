@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install
+        run: pip install -e .
+      - name: CLI help
+        run: shardguard --help
+      - name: Fixture scan
+        run: |
+          shardguard scan fixtures/MOCK_/M01_shard_three_modules --depth universal --report-dir /tmp/sg-out --skip-verify
+          test -f /tmp/sg-out/SECURITY_REPORT.html
+          test -f /tmp/sg-out/shardguard-report.zip

@@ -1,0 +1,9 @@
+rules:
+  - id: shell-curl-pipe
+    pattern: curl.*\|.*sh
+    owasp: A03:2021
+    cwe: CWE-78
+  - id: shell-eval
+    pattern: eval\s
+    owasp: A03:2021
+    cwe: CWE-94

@@ -1,0 +1,2 @@
+# SCSP — no external deps for core scanner (stdlib only)
+# Optional: install nyx-scanner on VPS via scripts/oneclick/bootstrap.sh

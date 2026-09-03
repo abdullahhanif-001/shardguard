@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ShardGuard — multi-file obfuscation scanner</title>
+<meta name="description" content="Open-source scanner for hidden and fragmented supply-chain payloads across 12 languages."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<style>
+:root {
+  --bg:#0c0d0f; --surface:#14161a; --border:#2a2e36; --text:#e8eaed; --muted:#8b919a;
+  --accent:#d97706; --ok:#22c55e;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; background:var(--bg); color:var(--text);
+  font:16px/1.5 "IBM Plex Sans", system-ui, sans-serif;
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, #1a1408 0%, transparent 55%),
+    linear-gradient(180deg, #0c0d0f 0%, #0c0d0f 100%);
+}
+a { color:var(--accent); }
+nav {
+  display:flex; justify-content:space-between; align-items:center;
+  padding:20px 6vw; border-bottom:1px solid transparent;
+}
+.logo { font-weight:700; letter-spacing:0.04em; color:var(--text); text-decoration:none; font-size:18px; }
+.logo span { color:var(--accent); }
+nav a.g { color:var(--muted); text-decoration:none; font-size:14px; }
+nav a.g:hover { color:var(--text); }
+.hero {
+  min-height:calc(100vh - 72px); display:flex; flex-direction:column; justify-content:center;
+  padding:48px 6vw 64px; max-width:920px;
+}
+.hero h1 {
+  font-size:clamp(36px, 6vw, 56px); line-height:1.08; font-weight:700; margin:0 0 16px;
+  letter-spacing:-0.02em;
+}
+.hero p.lead { color:var(--muted); font-size:18px; max-width:540px; margin:0 0 32px; }
+.cta { display:flex; flex-wrap:wrap; gap:12px; align-items:center; }
+.codebox {
+  display:flex; align-items:center; gap:12px; background:var(--surface);
+  border:1px solid var(--border); border-radius:6px; padding:10px 14px;
+  font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:14px;
+}
+.btn {
+  background:var(--accent); color:#111; border:none; border-radius:6px;
+  padding:10px 16px; font-weight:600; cursor:pointer; font:inherit;
+}
+.btn:hover { filter:brightness(1.08); }
+.btn:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+.btn.ghost {
+  background:transparent; color:var(--text); border:1px solid var(--border);
+}
+section { padding:72px 6vw; border-top:1px solid var(--border); max-width:1100px; margin:0 auto; }
+section h2 { font-size:28px; margin:0 0 8px; letter-spacing:-0.02em; }
+section .sub { color:var(--muted); margin:0 0 28px; max-width:520px; }
+.term {
+  background:#08090b; border:1px solid var(--border); border-radius:8px; padding:20px 22px;
+  font-family:"IBM Plex Mono", monospace; font-size:13px; line-height:1.6; min-height:160px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.35);
+}
+.term .prompt { color:var(--accent); }
+.term .out { color:var(--muted); }
+.term .hit { color:var(--ok); }
+.grid3 { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; }
+@media (max-width:800px) { .grid3 { grid-template-columns:1fr; } }
+.pane {
+  background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:16px;
+}
+.pane h3 { margin:0 0 10px; font-size:15px; }
+.pane pre {
+  margin:0; font-family:"IBM Plex Mono", monospace; font-size:12px; color:var(--muted);
+  white-space:pre-wrap; word-break:break-all;
+}
+.mock {
+  border:1px solid var(--border); border-radius:8px; overflow:hidden; background:var(--surface);
+}
+.mock-bar { padding:10px 14px; border-bottom:1px solid var(--border); font-size:12px; color:var(--accent); font-weight:600; }
+.mock-body { display:grid; grid-template-columns:1fr 1.4fr; min-height:180px; }
+.mock-body div { padding:14px; border-right:1px solid var(--border); font-size:12px; color:var(--muted); }
+.mock-body div:last-child { border:none; }
+.ci {
+  background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:16px;
+  font-family:"IBM Plex Mono", monospace; font-size:12px; overflow:auto; color:var(--muted);
+}
+.gaps { color:var(--muted); }
+footer {
+  padding:40px 6vw; border-top:1px solid var(--border); color:var(--muted); font-size:13px;
+  display:flex; flex-wrap:wrap; gap:16px; justify-content:space-between;
+}
+@media (prefers-reduced-motion:reduce) {
+  .term .typed { animation:none !important; }
+}
+@keyframes blink { 50% { opacity:0; } }
+.cursor { display:inline-block; width:8px; height:1em; background:var(--accent); vertical-align:text-bottom;
+  animation:blink 1s step-end infinite; }
+.flash { outline:2px solid var(--ok); }
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#">Shard<span>Guard</span></a>
+  <a class="g" href="https://github.com/abdullahhanif-001/shardguard">GitHub</a>
+</nav>
+
+<header class="hero">
+  <h1>See the shards attackers hide across files.</h1>
+  <p class="lead">Open-source scanner for multi-file obfuscation, encoding chains, and invisible unicode tricks — across twelve languages. Runs on your machine. No account.</p>
+  <div class="cta">
+    <div class="codebox" id="installCmd"><span>pipx install shardguard</span></div>
+    <button class="btn" type="button" id="copyBtn">Copy</button>
+    <a class="btn ghost" href="#install">Install options</a>
+  </div>
+</header>
+
+<section id="demo">
+  <h2>Thirty seconds to a report</h2>
+  <p class="sub">Install once. Scan a path or public GitHub URL. Open the offline triage HTML.</p>
+  <div class="term" id="term" aria-live="polite">
+    <div><span class="prompt">$</span> <span class="typed" id="typed"></span><span class="cursor" id="cur"></span></div>
+    <div class="out" id="termOut"></div>
+  </div>
+</section>
+
+<section id="catch">
+  <h2>What we catch</h2>
+  <p class="sub">Techniques that plain string-match scanners often miss until the payload is assembled.</p>
+  <div class="grid3">
+    <div class="pane">
+      <h3>Unicode / zero-width</h3>
+      <pre>e​xec('os.system(...)')
+# U+200B inside the sink token</pre>
+    </div>
+    <div class="pane">
+      <h3>Encoding chains</h3>
+      <pre>eval(base64_decode(...))
+# unfold depth ≤ 3, then re-scan</pre>
+    </div>
+    <div class="pane">
+      <h3>Multi-file shards</h3>
+      <pre>a.js → b.js → lifecycle
+# cross-file taint to exec sink</pre>
+    </div>
+  </div>
+</section>
+
+<section id="report">
+  <h2>Offline triage report</h2>
+  <p class="sub">Single-file HTML with filters, keyboard navigation, Print/PDF, and ZIP download of JSON + SARIF. No login.</p>
+  <div class="mock">
+    <div class="mock-bar">ShardGuard · SECURITY_REPORT.html</div>
+    <div class="mock-body">
+      <div>Files<br/>• main.py · P0<br/>• install.js · P1</div>
+      <div>Findings<br/><span style="color:#d97706">urns/encoding-chain-unfold</span><br/>Sink after base64 unfold<br/><br/>Evidence path<br/>1. main.py<br/>2. unfold:b64:depth1</div>
+    </div>
+  </div>
+</section>
+
+<section id="install">
+  <h2>Install</h2>
+  <p class="sub">Isolated CLI via pipx (recommended), or pip, or from git.</p>
+  <div class="grid3">
+    <div class="pane"><h3>pipx</h3><pre>pipx install shardguard
+shardguard scan .</pre></div>
+    <div class="pane"><h3>pip</h3><pre>pip install shardguard
+shardguard scan . --open</pre></div>
+    <div class="pane"><h3>From git</h3><pre>pipx install git+https://github.com/abdullahhanif-001/shardguard.git</pre></div>
+  </div>
+</section>
+
+<section id="ci">
+  <h2>CI</h2>
+  <p class="sub">Drop into GitHub Actions; upload SARIF as an artifact.</p>
+  <pre class="ci">- uses: actions/checkout@v4
+- uses: actions/setup-python@v5
+  with: { python-version: '3.12' }
+- run: pip install shardguard
+- run: shardguard scan . --depth universal --report-dir out --skip-verify
+- uses: actions/upload-artifact@v4
+  with: { name: shardguard-sarif, path: out/findings.sarif }</pre>
+</section>
+
+<section id="gaps">
+  <h2>Honest gaps</h2>
+  <p class="gaps">Static analysis cannot prove the absence of all bugs. VM-based JavaScript obfuscators without dynamic execution, fully dynamic <code>import(expr)</code>, and authorization logic flaws are out of scope or undecidable. See <code>docs/RICE_BOUNDS.md</code>.</p>
+</section>
+
+<footer>
+  <div>ShardGuard · Apache-2.0 · Abdullah</div>
+  <div><a href="https://github.com/abdullahhanif-001/shardguard">Repository</a> · engine: SCSP</div>
+</footer>
+
+<script>
+const copyBtn = document.getElementById('copyCmd') || document.getElementById('copyBtn');
+const installCmd = document.getElementById('installCmd');
+document.getElementById('copyBtn').addEventListener('click', async () => {
+  const text = 'pipx install shardguard';
+  try {
+    await navigator.clipboard.writeText(text);
+    const b = document.getElementById('copyBtn');
+    b.textContent = 'Copied';
+    installCmd.classList.add('flash');
+    setTimeout(() => { b.textContent = 'Copy'; installCmd.classList.remove('flash'); }, 1200);
+  } catch (_) {
+    document.getElementById('copyBtn').textContent = 'Select & copy';
+  }
+});
+
+const lines = [
+  { t: 'shardguard scan ./app --open', d: 40 },
+];
+const out = [
+  '[P0] [CRITICAL] hidden/urns/encoding-chain-unfold install.js:1',
+  '[P1] [HIGH] hidden/scsp/unicode-zero-width main.py:3',
+  '',
+  '2 finding(s), depth=universal',
+  'Report: shardguard-report/SECURITY_REPORT.html',
+];
+const typed = document.getElementById('typed');
+const termOut = document.getElementById('termOut');
+const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (reduce) {
+  typed.textContent = lines[0].t;
+  termOut.innerHTML = out.map(l => '<div class="out">' + (l.startsWith('[') ? '<span class="hit">'+l+'</span>' : l) + '</div>').join('');
+  document.getElementById('cur').style.display = 'none';
+} else {
+  let i = 0;
+  const s = lines[0].t;
+  function tick() {
+    if (i <= s.length) {
+      typed.textContent = s.slice(0, i++);
+      setTimeout(tick, 28);
+    } else {
+      document.getElementById('cur').style.display = 'none';
+      let j = 0;
+      function show() {
+        if (j < out.length) {
+          const d = document.createElement('div');
+          d.className = 'out';
+          d.innerHTML = out[j].startsWith('[') ? '<span class="hit">'+out[j]+'</span>' : out[j];
+          termOut.appendChild(d);
+          j++;
+          setTimeout(show, 120);
+        }
+      }
+      setTimeout(show, 200);
+    }
+  }
+  setTimeout(tick, 400);
+}
+</script>
+</body>
+</html>

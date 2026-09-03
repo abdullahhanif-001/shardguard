@@ -1,0 +1,21 @@
+name: World-Beat Gates
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+  schedule:
+    - cron: '0 6 * * 1'
+
+jobs:
+  world-beat:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install SCSP
+        run: pip install -e .
+      - name: World-Beat pipeline
+        run: bash scripts/benchmark/run_world_beat.sh

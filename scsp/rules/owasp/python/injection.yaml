@@ -1,0 +1,14 @@
+# OWASP A03 Injection — Python
+rules:
+  - id: py-eval
+    pattern: eval\s*\(
+    message: Python eval
+    severity: CRITICAL
+    owasp: A03:2021
+    cwe: CWE-94
+  - id: py-pickle
+    pattern: pickle\.loads
+    message: Unsafe pickle
+    severity: CRITICAL
+    owasp: A08:2021
+    cwe: CWE-502

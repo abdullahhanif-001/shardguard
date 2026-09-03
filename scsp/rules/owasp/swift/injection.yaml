@@ -1,0 +1,9 @@
+rules:
+  - id: swift-webview-js
+    pattern: evaluateJavaScript
+    owasp: A03:2021
+    cwe: CWE-79
+  - id: swift-deser
+    pattern: NSKeyedUnarchiver
+    owasp: A08:2021
+    cwe: CWE-502

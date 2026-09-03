@@ -1,0 +1,9 @@
+rules:
+  - id: kt-runtime-exec
+    pattern: Runtime\.getRuntime\(\)\.exec
+    owasp: A03:2021
+    cwe: CWE-78
+  - id: kt-webview
+    pattern: loadUrl\s*\(
+    owasp: A03:2021
+    cwe: CWE-79

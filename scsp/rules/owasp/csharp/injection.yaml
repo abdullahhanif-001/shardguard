@@ -1,0 +1,9 @@
+rules:
+  - id: cs-process-start
+    pattern: Process\.Start
+    owasp: A03:2021
+    cwe: CWE-78
+  - id: cs-deser
+    pattern: BinaryFormatter
+    owasp: A08:2021
+    cwe: CWE-502

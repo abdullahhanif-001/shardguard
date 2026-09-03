@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shardguard"
+version = "0.3.0"
+description = "ShardGuard — detect multi-file obfuscation and hidden supply-chain payloads across 12 languages"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.10"
+authors = [{ name = "Abdullah" }]
+keywords = [
+  "security",
+  "sast",
+  "supply-chain",
+  "obfuscation",
+  "taint-analysis",
+  "hidden-code",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Security",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/abdullahhanif-001/shardguard"
+Documentation = "https://abdullahhanif-001.github.io/shardguard/"
+Repository = "https://github.com/abdullahhanif-001/shardguard"
+Issues = "https://github.com/abdullahhanif-001/shardguard/issues"
+
+[project.scripts]
+shardguard = "scsp.cli:main"
+scsp = "scsp.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["scsp*"]
