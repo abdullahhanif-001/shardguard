@@ -1,21 +1,19 @@
-name: World-Beat Gates
+name: Hidden Bypass Suite
 
+# Maintainer-only heavy gate suite — not required for PR smoke.
+# Run manually when evaluating adversarial/bypass coverage.
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-  schedule:
-    - cron: '0 6 * * 1'
+  workflow_dispatch:
 
 jobs:
-  world-beat:
+  bypass-suite:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
-      - name: Install SCSP
+          python-version: "3.12"
+      - name: Install ShardGuard
         run: pip install -e .
-      - name: World-Beat pipeline
+      - name: Bypass / hidden pipeline
         run: bash scripts/benchmark/run_world_beat.sh
