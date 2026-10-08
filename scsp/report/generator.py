@@ -13,6 +13,8 @@ from scsp.lanes.types import LaneFinding
 from scsp.report.asvs import ASVS_CHAPTERS, LANE_TO_CHAPTERS
 from scsp.report.html_triage import render_triage_html
 
+HONEST_GAPS_FILENAME = "HONEST_GAPS.md"
+
 
 def build_coverage_matrix(findings: list[LaneFinding], meta: dict) -> dict[str, Any]:
     covered: set[str] = set()
@@ -125,7 +127,7 @@ def generate_report(
     (out_dir / "coverage_matrix.json").write_text(json.dumps(coverage, indent=2), encoding="utf-8")
     (out_dir / "attack_surface.json").write_text(json.dumps(attack, indent=2), encoding="utf-8")
     (out_dir / "maintainer_risk.json").write_text(json.dumps(mr, indent=2), encoding="utf-8")
-    (out_dir / "HONEST_GAPS.md").write_text(build_honest_gaps(findings), encoding="utf-8")
+    (out_dir / HONEST_GAPS_FILENAME).write_text(build_honest_gaps(findings), encoding="utf-8")
 
     html_path = out_dir / "SECURITY_REPORT.html"
     html_path.write_text(render_triage_html(report), encoding="utf-8")
@@ -154,6 +156,6 @@ def generate_report(
         zf.write(html_path, arcname="SECURITY_REPORT.html")
         zf.write(json_path, arcname="SECURITY_REPORT.json")
         zf.write(sarif_path, arcname="findings.sarif")
-        zf.write(out_dir / "HONEST_GAPS.md", arcname="HONEST_GAPS.md")
+        zf.write(out_dir / HONEST_GAPS_FILENAME, arcname=HONEST_GAPS_FILENAME)
 
     return report

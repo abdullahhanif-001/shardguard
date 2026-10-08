@@ -46,7 +46,7 @@ if [ ! -d .venv ]; then
 fi
 # shellcheck disable=SC1091
 source .venv/bin/activate
-pip install -q z3-solver psutil 2>/dev/null || pip install -q z3-solver
+pip install -q --only-binary ":all:" z3-solver psutil 2>/dev/null || pip install -q --only-binary ":all:" z3-solver
 
 run_gate() {
   local g="$1"

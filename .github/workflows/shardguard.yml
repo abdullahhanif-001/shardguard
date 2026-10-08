@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install ShardGuard
-        run: pip install -e .
+        run: python -m pip install --no-deps --only-binary ":all:" -e .
       - name: Scan
         run: shardguard scan "${{ inputs.path || github.event.inputs.path || '.' }}" --depth universal --report-dir shardguard-out --skip-verify
       - uses: actions/upload-artifact@v4

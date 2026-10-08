@@ -9,7 +9,7 @@ apt-get install -y -qq \
 
 # Node.js 20 LTS (npm for G10 baseline)
 if ! command -v node &>/dev/null; then
-  curl -fsSL https://deb.nodesource.com/setup_20.x | bash -
+  curl --proto '=https' --tlsv1.2 -fsSL https://deb.nodesource.com/setup_20.x | bash -
   apt-get install -y -qq nodejs
 fi
 
@@ -22,8 +22,8 @@ if [ ! -d .venv ]; then
 fi
 # shellcheck disable=SC1091
 source .venv/bin/activate
-pip install -q --upgrade pip
-pip install -q z3-solver psutil semgrep
+pip install -q --only-binary ":all:" --upgrade pip
+pip install -q --only-binary ":all:" z3-solver psutil semgrep
 
 # Hard-fail tool verification
 for cmd in python3 git clang node npm; do

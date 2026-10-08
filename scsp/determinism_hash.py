@@ -37,7 +37,8 @@ def canonical_finding(f: LaneFinding, case_root: Path | None = None) -> dict:
 
 
 def hash_findings(findings: list[LaneFinding], case_root: Path | None = None) -> None:
-    pass
+    """Reserved for future in-place finding hashing."""
+    return None
 
 
 def findings_hash_normalized(cases: list[Path], scan_fn) -> str:

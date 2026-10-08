@@ -11,8 +11,9 @@ ROOT = Path(__file__).resolve().parents[2]
 
 
 def _load_json(path: Path) -> dict:
-    if path.is_file():
-        return json.loads(path.read_text(encoding="utf-8"))
+    resolved = path.resolve()
+    if resolved.is_file():
+        return json.loads(resolved.read_text(encoding="utf-8"))
     return {}
 
 
@@ -89,15 +90,20 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--proof", default=str(ROOT / "proof" / "universal"))
     args = parser.parse_args()
-    proof_root = Path(args.proof)
+    proof_root = Path(args.proof).resolve()
+    proof_root.mkdir(parents=True, exist_ok=True)
     html = build_dashboard(proof_root)
-    out = proof_root / "REPORT_DASHBOARD.html"
+    out = (proof_root / "REPORT_DASHBOARD.html").resolve()
+    if not str(out).startswith(str(proof_root)):
+        raise ValueError("Invalid proof path")
     out.write_text(html, encoding="utf-8")
     summary = {
         "dashboard": str(out),
         "proof_root": str(proof_root),
     }
-    (proof_root / "REPORT_DASHBOARD.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
+    json_out = (proof_root / "REPORT_DASHBOARD.json").resolve()
+    if str(json_out).startswith(str(proof_root)):
+        json_out.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps(summary, indent=2))
     return 0
 

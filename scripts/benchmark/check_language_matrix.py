@@ -37,9 +37,10 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("matrix", nargs="?", default=str(MATRIX_PATH))
     parser.add_argument("--strict", action="store_true")
-    args = parser.parse_args()
-
-    matrix = json.loads(Path(args.matrix).read_text(encoding="utf-8"))
+    target_path = Path(args.matrix).resolve()
+    if not target_path.is_file():
+        raise FileNotFoundError(f"Matrix file not found: {target_path}")
+    matrix = json.loads(target_path.read_text(encoding="utf-8"))
     registered = _registered_plugins()
     tier0 = set(matrix["tiers"]["tier0_core"])
     tier1 = set(matrix["tiers"]["tier1"])

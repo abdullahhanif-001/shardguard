@@ -941,8 +941,9 @@ def write_vps_attestation_hidden(ssh_proof: str = "") -> Path:
     m = HIDDEN_ROOT / "MANIFEST.json"
     data["hidden_gates_pass"] = hidden_pass
     data["hidden_corpus_sha256"] = json.loads(m.read_text()).get("sha256", "") if m.is_file() else ""
-    p.write_text(json.dumps(data, indent=2), encoding="utf-8")
-    return p
+    out_path = (PROOF_UNIVERSAL / "VPS_ATTESTATION.json").resolve()
+    out_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+    return out_path
 
 
 def run_sonar_parity_all() -> int:

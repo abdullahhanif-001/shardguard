@@ -3,8 +3,8 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
-import random
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -14,8 +14,7 @@ MANIFEST = ROOT / "benchmarks" / "incidents" / "manifest.json"
 def main() -> None:
     data = json.loads(MANIFEST.read_text(encoding="utf-8"))
     detect_cases = [c for c in data["cases"] if c.get("tier") in ("A", "H") and c.get("verdict", "DETECT") == "DETECT"]
-    random.seed(42)
-    random.shuffle(detect_cases)
+    detect_cases.sort(key=lambda c: hashlib.sha256(f"seed42_{c['id']}".encode()).hexdigest())
     holdout_ids = {c["id"] for c in detect_cases[: max(1, len(detect_cases) // 5)]}
 
     for case in data["cases"]:

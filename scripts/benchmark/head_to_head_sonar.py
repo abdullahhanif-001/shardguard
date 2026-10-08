@@ -148,7 +148,10 @@ def main() -> int:
     args = parser.parse_args()
 
     if args.compare:
-        lb = json.loads(Path(args.compare).read_text(encoding="utf-8"))
+        cmp_path = Path(args.compare).resolve()
+        if not cmp_path.is_file():
+            raise FileNotFoundError(f"Leaderboard file not found: {cmp_path}")
+        lb = json.loads(cmp_path.read_text(encoding="utf-8"))
         print(json.dumps(lb, indent=2))
         return 0
 

@@ -35,7 +35,7 @@ class BuildGraph:
         }
 
 
-def resolve_import(base_file: Path, spec: str, root: Path) -> Path | None:
+def resolve_import(base_file: Path, spec: str, root: Path | None = None) -> Path | None:
     if spec.startswith("."):
         base = (base_file.parent / spec).resolve()
         candidates = [

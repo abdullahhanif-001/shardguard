@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends git \
 WORKDIR /scsp
 COPY . /scsp
 
-RUN pip install --no-cache-dir -e . \
+RUN pip install --no-cache-dir --no-deps --only-binary ":all:" -e . \
     && python scripts/benchmark/generate_incident_fixtures.py \
     && python scripts/benchmark/fetch_osv_snapshots.py --tier all --offline \
     && python -m scsp verify-self --pin

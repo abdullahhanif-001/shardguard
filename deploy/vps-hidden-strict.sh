@@ -26,7 +26,7 @@ echo "[hidden-strict] start $(date -u +%Y-%m-%dT%H:%M:%SZ)"
 
 if [ ! -d .venv ]; then python3 -m venv .venv; fi
 source .venv/bin/activate
-pip install -q z3-solver psutil semgrep 2>/dev/null || true
+pip install -q --only-binary ":all:" z3-solver psutil semgrep 2>/dev/null || true
 
 python3 -m scsp verify-self
 

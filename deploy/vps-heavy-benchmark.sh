@@ -27,7 +27,7 @@ if [ ! -d .venv ]; then
 fi
 # shellcheck disable=SC1091
 source .venv/bin/activate
-pip install -q z3-solver 2>/dev/null || true
+pip install -q --only-binary ":all:" z3-solver 2>/dev/null || true
 
 python3 -m scsp verify-self
 

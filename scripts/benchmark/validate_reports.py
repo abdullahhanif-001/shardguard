@@ -164,7 +164,7 @@ def main() -> int:
         "status": "PASS" if all(r["status"] == "PASS" for r in results) else "FAIL",
         "results": results,
     }
-    out = Path(args.output)
+    out = Path(args.output).resolve()
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(summary, indent=2), encoding="utf-8")
     print(json.dumps(summary, indent=2))

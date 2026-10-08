@@ -22,5 +22,4 @@ class JavaScriptPlugin(BasePlugin):
 
     def resolve_import(self, base: Path, spec: str) -> Path | None:
         from scsp.build_graph import resolve_import
-
-        return resolve_import(base, spec)
+        return resolve_import(base, spec, base.parent)

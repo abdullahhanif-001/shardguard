@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 import subprocess
+import tempfile
 from pathlib import Path
 
 from scsp.lanes.types import LaneFinding
@@ -53,16 +54,18 @@ def run_libfuzzer_harness(harness: Path, timeout: int = 10) -> list[LaneFinding]
     if not harness.is_file():
         return findings
     try:
-        result = subprocess.run(
-            ["clang", "-fsanitize=address,fuzzer", str(harness), "-o", "/tmp/scsp_fuzz"],
-            capture_output=True,
-            timeout=timeout,
-            check=False,
-        )
-        if result.returncode != 0:
-            return findings
-        run = subprocess.run(["/tmp/scsp_fuzz", "-runs=100"], capture_output=True, text=True, timeout=timeout, check=False)
-        if "ERROR: AddressSanitizer" in (run.stderr or "") + (run.stdout or ""):
+        with tempfile.TemporaryDirectory() as tmpdir:
+            out_bin = Path(tmpdir) / "scsp_fuzz"
+            result = subprocess.run(
+                ["clang", "-fsanitize=address,fuzzer", str(harness), "-o", str(out_bin)],
+                capture_output=True,
+                timeout=timeout,
+                check=False,
+            )
+            if result.returncode != 0:
+                return findings
+            run = subprocess.run([str(out_bin), "-runs=100"], capture_output=True, text=True, timeout=timeout, check=False)
+            if "ERROR: AddressSanitizer" in (run.stderr or "") + (run.stdout or ""):
             findings.append(
                 LaneFinding(
                     rule_id="urns/fuzz-asan-crash",
