@@ -66,18 +66,18 @@ def run_libfuzzer_harness(harness: Path, timeout: int = 10) -> list[LaneFinding]
                 return findings
             run = subprocess.run([str(out_bin), "-runs=100"], capture_output=True, text=True, timeout=timeout, check=False)
             if "ERROR: AddressSanitizer" in (run.stderr or "") + (run.stdout or ""):
-            findings.append(
-                LaneFinding(
-                    rule_id="urns/fuzz-asan-crash",
-                    severity="CRITICAL",
-                    message="AddressSanitizer crash in fuzz harness",
-                    file=str(harness),
-                    lane="fuzz",
-                    tier="P0",
-                    witness_constraints={"harness": str(harness)},
-                    status="DETECT",
+                findings.append(
+                    LaneFinding(
+                        rule_id="urns/fuzz-asan-crash",
+                        severity="CRITICAL",
+                        message="AddressSanitizer crash in fuzz harness",
+                        file=str(harness),
+                        lane="fuzz",
+                        tier="P0",
+                        witness_constraints={"harness": str(harness)},
+                        status="DETECT",
+                    )
                 )
-            )
     except (OSError, subprocess.TimeoutExpired, FileNotFoundError):
         pass
     return findings
